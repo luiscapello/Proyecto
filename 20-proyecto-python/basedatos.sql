@@ -1,4 +1,4 @@
-"""crear base de datos"""
+"""---crear base de datos---"""
 CREATE DATABASE IF NOT EXISTS master_python;
 use master_python;
 
@@ -13,7 +13,7 @@ CREATE TABLE usuarios(
     CONSTRAINT  up_email UNIQUE(email) """restriccion para no registrar usuarios con el mismo email"""
 )ENGINE = InnoDB;
 
-"""crear tablas"""
+"""---crear tablas---"""
 CREATE TABLE notas(
     id          int(25) auto_increment not null,
     usuario_id  int(25) not null,
