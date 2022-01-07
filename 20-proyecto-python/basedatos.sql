@@ -2,6 +2,7 @@
 CREATE DATABASE IF NOT EXISTS master_python;
 use master_python;
 
+"""---crear tablas---"""
 CREATE TABLE usuarios(
     id          int(25) auto_increment not null,
     nombre      varchar(255),
@@ -13,7 +14,6 @@ CREATE TABLE usuarios(
     CONSTRAINT  up_email UNIQUE(email) """restriccion para no registrar usuarios con el mismo email"""
 )ENGINE = InnoDB;
 
-"""---crear tablas---"""
 CREATE TABLE notas(
     id          int(25) auto_increment not null,
     usuario_id  int(25) not null,
