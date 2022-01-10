@@ -12,11 +12,12 @@ CREATE TABLE usuarios(
     fecha       date not null,
     CONSTRAINT  pk_usuarios PRIMARY KEY(id), """ asignar cual campo sera la llave primaria"""
     CONSTRAINT  up_email UNIQUE(email) """restriccion para no registrar usuarios con el mismo email"""
-)ENGINE = InnoDB;
+)ENGINE = InnoDB; """ mantener relacion entre tablas """
 
 CREATE TABLE notas(
     id          int(25) auto_increment not null,
     usuario_id  int(25) not null,
+    titulo      varchar(255) not nill,
     descripcion MEDIUMTEXT,
     fecha       date not null,
     CONSTRAINT  pk_notas PRIMARY KEY(id), """ asignar cual campo sera la llave primaria"""
