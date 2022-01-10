@@ -5,7 +5,7 @@ Acciones disponibles
     -Ingresar
 """)
 
-acciones = input("Que Accion deseas realizar? ")
+accion = input("Que Accion deseas realizar? ")
 
 if accion == "Registro":
     print("Ok!! Vamos a registrarte en el sistema ...")
