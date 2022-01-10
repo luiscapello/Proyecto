@@ -15,14 +15,13 @@ database = mysql.connector.connect(
 cursor = database.cursor()
 
 # crear base de datos
-"""
+
 cursor.execute("CREATE DATABASE IF NOT EXISTS master_python")
 
 cursor.execute("SHOW DATABASES")
 
 for db in cursor:
     print(db)
-"""
 
 # Crear tablas
 cursor.execute("""
@@ -41,7 +40,7 @@ cursor.execute("SHOW TABLES")
 
 for table in cursor:
      print(table)
-"""
+
 
 #insertar datos
 #cursor.execute("INSERT INTO vehiculos VALUES(null, 'Opel', 'Astra', 18500)")
@@ -68,13 +67,16 @@ for coches in result:
     print(coches)
 
 #borrar datos
+
 cursor.execute("DELETE FROM vehiculos WHERE marca = 'Mercedes'")
 database.commit()
 
 print(cursor.rowcount, "Borrados!!")
 
 #actualizar datos
+
 cursor.execute("UPDATE vehiculos SET modelo = 'C4 PureTech 155' WHERE marca = 'Citroen'")
 database.commit()
 
 print(cursor.rowcount, "Actualizados!!")
+"""
