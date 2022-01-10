@@ -17,7 +17,7 @@ CREATE TABLE usuarios(
 CREATE TABLE notas(
     id          int(25) auto_increment not null,
     usuario_id  int(25) not null,
-    titulo      varchar(255) not nill,
+    titulo      varchar(255) not null,
     descripcion MEDIUMTEXT,
     fecha       date not null,
     CONSTRAINT  pk_notas PRIMARY KEY(id), """ asignar cual campo sera la llave primaria"""
