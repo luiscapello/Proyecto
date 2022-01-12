@@ -8,7 +8,7 @@ database = mysql.connector.connect(
     port="3306"
 )
 
-print(database)
+cursor = database.cursor(buffered = True)
 
 
 class Usuario:
