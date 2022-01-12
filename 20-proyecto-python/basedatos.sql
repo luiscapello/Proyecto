@@ -11,7 +11,7 @@ CREATE TABLE usuarios(
     password    varchar(255) not null,
     fecha       date not null,
     CONSTRAINT  pk_usuarios PRIMARY KEY(id), """ asignar cual campo sera la llave primaria"""
-    CONSTRAINT  up_email UNIQUE(email) """restriccion para no registrar usuarios con el mismo email"""
+    CONSTRAINT  uq_email UNIQUE(email) """restriccion para no registrar usuarios con el mismo email"""
 )ENGINE = InnoDB; """ mantener relacion entre tablas """
 
 CREATE TABLE notas(
