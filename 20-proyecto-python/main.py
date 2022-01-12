@@ -1,14 +1,17 @@
 
+from usuarios import acciones
+
 print("""
 Acciones disponibles
     -Registro
     -Ingresar
 """)
 
+hazEl = acciones.Acciones()
+
 accion = input("Que Accion deseas realizar? ")
 
 if accion == "Registro":
-    print("Ok!! Vamos a registrarte en el sistema ...")
-
+    hazEl.registro()
 elif accion == "Ingresar":
-    print(" Vale!! vamos a ingresar en el sistema ...")
+    hazEl.ingresar()
