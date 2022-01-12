@@ -1,5 +1,5 @@
 
-#from usuarios import acciones
+from usuarios import acciones
 
 print("""
 Acciones disponibles
