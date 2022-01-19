@@ -41,8 +41,8 @@ class Programa:
         else:
             ventana.resizable(0,0)
 
-    def addtexto(self):
-        texto = Label(self.ventana, text="Ingresa al sistema")
+    def addtexto(self, dato):
+        texto = Label(self.ventana, text=dato)
         texto.pack()
 
     def mostrar(self):
@@ -52,5 +52,8 @@ class Programa:
 # Instanciar programa
 programa = Programa()
 programa.cargar()
-programa.addtexto()
+programa.addtexto("Uyeda Industrial de Mexico")
+programa.addtexto("Ingresa al Sistema")
+programa.addtexto("Cotizaciones")
+programa.addtexto("********************************")
 programa.mostrar()
