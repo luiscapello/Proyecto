@@ -14,6 +14,7 @@ class Programa:
     def cargar(self):
         #crear la ventana raiz
         ventana = Tk()
+        self.ventana = ventana
 
         #titulo e la ventana
         ventana.title(self.title)
@@ -40,9 +41,16 @@ class Programa:
         else:
             ventana.resizable(0,0)
 
+    def addtexto(self):
+        texto = Label(self.ventana, text="Ingresa al sistema")
+        texto.pack()
+
+    def mostrar(self):
         #arrancar y mostrar la ventana hasta que se cierre
-        ventana.mainloop()
+        self.ventana.mainloop()
 
 # Instanciar programa
 programa = Programa()
 programa.cargar()
+programa.addtexto()
+programa.mostrar()
