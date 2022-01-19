@@ -2,32 +2,47 @@ from cProfile import label
 from tkinter import *
 import os.path
 
-#crear la ventana raiz
-ventana = Tk()
+class Programa:
 
-#titulo e la ventana
-ventana.title("Login uyeda")
+    def __init__(self):
+        self.title = "Login Uyeda Industrial de mexico"
+        self.icon = './img/rocket-ship.ico'
+        self.icon_alt = './21-tkinter/img/rocket-ship.ico'
+        self.size = "650x500"
+        self.resizable = False
 
-#comprobar si existe un archivo
-ruta_icono = os.path.abspath('./img/rocket-ship.ico')
+    def cargar(self):
+        #crear la ventana raiz
+        ventana = Tk()
 
-#Icono de la ventana
-#ventana.iconbitmap(ruta_icono)
+        #titulo e la ventana
+        ventana.title(self.title)
 
-if not os.path.isfile(ruta_icono):
-    ruta_icono = os.path.abspath('./21-tkinter/img/rocket-ship.ico')
+        #comprobar si existe un archivo
+        ruta_icono = os.path.abspath(self.icon)
 
-#mostrar texto en el programa
-texto = Label(ventana, text=ruta_icono)
-texto.pack()
+        #Icono de la ventana
+        #ventana.iconbitmap(ruta_icono)
 
-#cambio en el tamaño de la ventana
-ventana.geometry("650x500")
+        if not os.path.isfile(ruta_icono):
+            ruta_icono = os.path.abspath(self.icon_alt)
 
-#bloquear el tamaño de la ventana
-ventana.resizable(0,0)
+        #mostrar texto en el programa
+        texto = Label(ventana, text=ruta_icono)
+        texto.pack()
 
+        #cambio en el tamaño de la ventana
+        ventana.geometry(self.size)
 
+        #bloquear el tamaño de la ventana
+        if self.resizable:
+            ventana.resizable(1,1)
+        else:
+            ventana.resizable(0,0)
 
-#arrancar y mostrar la ventana hasta que se cierre
-ventana.mainloop()
+        #arrancar y mostrar la ventana hasta que se cierre
+        ventana.mainloop()
+
+# Instanciar programa
+programa = Programa()
+programa.cargar()
