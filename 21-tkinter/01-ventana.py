@@ -52,8 +52,9 @@ class Programa:
 # Instanciar programa
 programa = Programa()
 programa.cargar()
+programa.addtexto("**************************************")
 programa.addtexto("Uyeda Industrial de Mexico")
 programa.addtexto("Ingresa al Sistema")
 programa.addtexto("Cotizaciones")
-programa.addtexto("********************************")
+programa.addtexto("**************************************")
 programa.mostrar()
