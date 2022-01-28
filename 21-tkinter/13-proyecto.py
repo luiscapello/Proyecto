@@ -92,7 +92,7 @@ def info():
     add_frame.grid_remove()
     home_label.grid_remove()
 
-    return True¨
+    return True
 
 def add_product():
     products.append([
