@@ -37,7 +37,7 @@ def index(request):
 
     html += "</ul>"
 
-    return HttpResponse(layout + html)
+    return render(request, 'index.html')
 
 def hola_mundo(request):
     return HttpResponse(layout +"""
