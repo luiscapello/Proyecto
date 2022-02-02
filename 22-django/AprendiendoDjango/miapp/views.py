@@ -40,10 +40,7 @@ def index(request):
     return render(request, 'index.html')
 
 def hola_mundo(request):
-    return HttpResponse(layout +"""
-        <h1>Hola mundo con Django !!</h1>
-        <h3> Creado por Capello </h3>
-    """)
+    return render(request, 'hola_mundo.html')
 
 def pagina(request):
     return HttpResponse(layout +"""
