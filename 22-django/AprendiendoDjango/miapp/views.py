@@ -50,3 +50,6 @@ def pagina(request):
         <h1>Pagina de mi Web</h1>
         <p>Creado por Capello</p>
     """)
+
+def contacto(request):
+    return HttpResponse(layout + "<h2>Contactos</h2>")
