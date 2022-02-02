@@ -1,10 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Sistema Uyeda</title>
 </head>
 
+<body>
+    <h1>Sistema Uyeda Industrial</h1>
+    <hr />
+    <ul>
+        <li>
+            <a href="/inicio">Inicio</a>
+        </li>
+        <li>
+            <a href="/hola-mundo">Hola Mundo</a>
+        </li>
+        <li>
+            <a href="/pagina-pruebas">Pagina de Prueba</a>
+        </li>
+    </ul>
+    <hr />
+
+    <div id="content">
+        {% block content %} {% endblock %}
+    </div>
+
+    <footer>
+        Uyeda Inductrial @copy; Luis Capello
+    </footer>
+
+</body>
 
 </html>
