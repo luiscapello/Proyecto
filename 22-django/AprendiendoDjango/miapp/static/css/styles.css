@@ -6,3 +6,25 @@
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
 }
+
+body {
+    background-color: teal;
+}
+
+
+/* Estilos Cabecera */
+
+header {
+    width: 1212px;
+    height: 140px;
+    background-color: #13282B;
+    margin: auto;
+}
+
+#logotipo h1 {
+    display: block;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #42a096;
+}
