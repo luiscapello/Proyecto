@@ -43,10 +43,7 @@ def hola_mundo(request):
     return render(request, 'hola_mundo.html')
 
 def pagina(request):
-    return HttpResponse(layout +"""
-        <h1>Pagina de mi Web</h1>
-        <p>Creado por Capello</p>
-    """)
+    return render(request, 'pagina.html')
 
 def contacto(request):
     return HttpResponse(layout + "<h2>Contactos</h2>")
