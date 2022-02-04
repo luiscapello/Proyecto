@@ -43,12 +43,15 @@
     </div>
 
     <div id="content">
-        <h2 class="title"> Titulo </h2>
-        {% block content %} {% endblock %}
+        <div class="box">
+            <h2 class="title"> Titulo </h2>
+            {% block content %}
+            <strong> Contenido del bloque </strong> {% endblock %}
+        </div>
     </div>
 
     <footer>
-        Uyeda Inductrial &copy; Luis Capello
+        Uyeda Inductrial de Mexico &copy; Creado por Luis Capello
     </footer>
 
 </body>
