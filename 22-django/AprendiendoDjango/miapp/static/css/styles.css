@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: teal;
+    background-color: #1BA9B6;
 }
 
 
@@ -17,14 +17,29 @@ body {
 header {
     width: 1212px;
     height: 140px;
-    background-color: #13282B;
+    background-color: #195CA2;
     margin: auto;
+}
+
+#logotipo{
+    width: 55%;
+    height: 140px;
+    margin: 0 auto;
+}
+
+#logotipo img{
+    display: block;
+    width: 250px;
+    float: left;
+    margin-top: 20px;
 }
 
 #logotipo h1 {
     display: block;
+    width: auto;
+    margin-left: 5px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    font-weight: normal;
+    font-weight: lighter;
     color: #42a096;
 }
