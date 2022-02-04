@@ -17,28 +17,29 @@ body {
 header {
     width: 1212px;
     height: 140px;
-    background-color: #195CA2;
+    background-color: #000;
     margin: auto;
 }
 
-#logotipo{
-    width: 55%;
+#logotipo {
+    width: 70%;
     height: 140px;
     margin: 0 auto;
 }
 
-#logotipo img{
+#logotipo img {
     display: block;
-    width: 250px;
+    width: 300px;
     float: left;
-    margin-top: 20px;
+    margin-top: 16px;
 }
 
 #logotipo h1 {
     display: block;
-    width: auto;
-    margin-left: 5px;
-    letter-spacing: 2px;
+    margin-left: 21px;
+    padding-top: 50px;
+    padding-left: 300px;
+    letter-spacing: 1px;
     text-transform: uppercase;
     font-weight: lighter;
     color: #42a096;
