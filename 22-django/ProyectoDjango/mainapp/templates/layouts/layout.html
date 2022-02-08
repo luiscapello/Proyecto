@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block title %} {% endblock %}
+    </title>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}" />
+
+</head>
+
+<body>
+
+    <!-- Cabecera de la Pagina -->
+    <header>
+        <div id="logotipo">
+            <!-- logo -->
+            <img src="{% static 'img/logo2.png' %}" alt="logo uyeda">
+            <h1>Sitema de Cotización</h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="/inicio">Inicio</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="barra">
+        <span class="esquina-izquierda"></span>
+        <span class="relleno-barra"></span>
+        <span class="esquina-derecha"></span>
+    </div>
+
+    <div id="content">
+        <div class="box">
+            {% block content %}
+            <strong> Contenido del bloque </strong> {% endblock %}
+        </div>
+    </div>
+
+    <footer>
+        <i>
+            Uyeda Inductrial de Mexico &copy; Creado por Luis Capello
+        </i>
+    </footer>
+
+</body>
+
+</html>
