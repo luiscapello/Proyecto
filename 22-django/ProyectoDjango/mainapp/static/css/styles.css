@@ -144,6 +144,12 @@ nav ul li a:hover {
     margin-bottom: 15px;
 }
 
+span.date {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
 footer {
     width: 1250px;
     background-color: #1b1e1f;
