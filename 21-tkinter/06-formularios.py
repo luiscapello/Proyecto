@@ -4,6 +4,7 @@ from tkinter import *
 ventana = Tk()
 ventana.geometry("400x300")
 ventana.title("Formulario Uyeda")
+#ventana.iconbitmap("./img/rocket-ship.ico")
 
 # Texto Encabazado
 encabezado = Label(ventana, text="Formularios || Capello")
@@ -35,7 +36,7 @@ campo_texto = Entry(ventana)
 campo_texto.grid(row=2, column=1, sticky=W, padx=5, pady=5)
 campo_texto.config(justify="left", state="normal")
 
-#label para e campo (descripcion)
+#label para el campo (descripcion)
 label = Label(ventana, text="Descripción")
 label.grid(row=3, column=0, sticky=N, padx=5, pady=5)
 

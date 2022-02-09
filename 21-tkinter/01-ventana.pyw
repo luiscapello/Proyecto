@@ -6,8 +6,8 @@ class Programa:
 
     def __init__(self):
         self.title = "Login Uyeda Industrial de mexico"
-        self.icon = './img/rocket-ship.ico'
-        self.icon_alt = './21-tkinter/img/rocket-ship.ico'
+        self.icon = './img/UYEDA.png'
+        self.icon_alt = './21-tkinter/img/UYEDA.png'
         self.size = "650x500"
         self.resizable = False
 

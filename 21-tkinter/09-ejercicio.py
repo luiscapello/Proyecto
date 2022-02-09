@@ -60,7 +60,7 @@ numero1 = StringVar()
 numero2 = StringVar()
 resultado = StringVar()
 
-marco = Frame(ventana, width=300, height=200)
+marco = Frame(ventana, width=500, height=600)
 marco.config(
     bd=5,
     relief=SOLID,
@@ -85,7 +85,7 @@ Button(marco, text=" Restar ", command=restar).pack(side="left", fill=X, expand=
 Label(marco, text="").pack(side="left")
 Button(marco, text=" Multiplicar ", command=multiplicar).pack(side="left", fill=X, expand=YES)
 Label(marco, text="").pack(side="left")
-Button(marco, text=" Dividir ", command=dividir).pack(side="left", fill=X, expand=YES)
-Label(marco, text="").pack(side="left")
+#Button(marco, text=" Dividir ", command=dividir).pack(side="left", fill=X, expand=YES)
+#Label(marco, text="").pack(side="left")
 
 ventana.mainloop()
