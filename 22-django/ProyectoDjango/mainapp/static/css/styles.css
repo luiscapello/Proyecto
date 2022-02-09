@@ -144,6 +144,10 @@ nav ul li a:hover {
     margin-bottom: 15px;
 }
 
+.content {
+    line-height: 25px;
+}
+
 footer {
     width: 1250px;
     background-color: #1b1e1f;
