@@ -168,7 +168,7 @@ nav ul li a:hover {
     height: 700px;
     padding-top: 10px;
     border-radius: 4em 1em;
-    margin: 0 auto;
+    margin: 30px auto;
     background-image: linear-gradient( 110.8deg, rgba(32, 178, 170, 1) 79.9%, rgba(5, 124, 159, 1) 79.9%);
     box-shadow: 0px 32px 40px #000;
 }
@@ -181,6 +181,20 @@ nav ul li a:hover {
     margin: 0 auto;
     width: 90%;
     font-size: 17px;
+}
+
+.message,
+.alert-secces,
+.alert {
+    padding: 20px;
+    background: #00b3c5;
+    color: #000;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.alert-warning {
+    background-image: radial-gradient( circle farthest-corner at 0.6% 0.8%, rgba(173, 8, 8, 1) 0%, rgba(253, 63, 19, 1) 100.2%);
 }
 
 .box form input[type="text"],
