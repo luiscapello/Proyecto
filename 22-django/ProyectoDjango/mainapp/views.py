@@ -5,6 +5,8 @@ from mainapp.forms import RegisterForm
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
 
+
+
 # Create your views here.
 
 def index(request):
