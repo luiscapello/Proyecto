@@ -25,20 +25,26 @@
 
     <nav>
         <ul>
-            <li>
-                <a href="{% url 'index' %}">Inicio</a>
-            </li>
-            {% for page in pages %}
+            {% if user.email %}
                 <li>
-                    <a href="{% url 'page' page.2 %}">{{page.1}}</a>
+                    <a href="{% url 'index' %}">Inicio</a>
                 </li>
-            {% endfor %}
-            <li>
-                <a href="{% url 'register' %}">Registro</a>
-            </li>
-            <li>
-                <a href="{% url 'login' %}">Login</a>
-            </li>
+                {% for page in pages %}
+                    <li>
+                        <a href="{% url 'page' page.2 %}">{{page.1}}</a>
+                    </li>
+                {% endfor %}
+                <li>
+                    <a href="{% url 'logout' %}">Cerrar Sesión</a>
+                </li>
+            {% else %}
+{% comment %}                 <li>
+                    <a href="{% url 'register' %}">Registro</a>
+                </li> {% endcomment %}
+                <li>
+                    <a href="{% url 'login' %}">Login</a>
+                </li>
+            {% endif %}
         </ul>
     </nav>
     <div class="barra">
