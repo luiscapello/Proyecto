@@ -17,22 +17,26 @@ def index(request):
 
 def register_page(request):
 
-    register_form = RegisterForm()
+    if request.user.is_autenticated:
+        return redirect('inicio')
+    else:
+        register_form = RegisterForm()
 
-    if request.method == "POST":
-        register_form = RegisterForm(request.POST)
+        if request.method == "POST":
+            register_form = RegisterForm(request.POST)
 
-        if register_form.is_valid():
-            register_form.save()
+            if register_form.is_valid():
+                register_form.save()
 
-            return redirect('inicio')
+                return redirect('inicio')
 
-    return render(request, 'users/register.html',{
-        'title': 'Registro',
-        'register_form': register_form
-    })
+        return render(request, 'users/register.html',{
+            'title': 'Registro',
+            'register_form': register_form
+        })
 
 def login_page(request):
+    
 
     if request.method == 'POST':
         username = request.POST.get('username')
