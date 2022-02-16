@@ -114,12 +114,6 @@ nav ul li a:hover {
 
 /* Estilos contenido */
 
-hr {
-    border: 0;
-    height: 12px;
-    box-shadow: inset 0 12px 12px -12px orange;
-}
-
 #content {
     width: 1212px;
     min-height: 530px;
@@ -155,6 +149,12 @@ hr {
 
 .content {
     line-height: 25px;
+    margin-top: 10px;
+}
+
+.content2 {
+    display: block;
+    margin-top: 10px;
 }
 
 .logo-header {

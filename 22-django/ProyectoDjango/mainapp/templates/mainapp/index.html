@@ -6,13 +6,13 @@
 
 
 {% block content %}
-    <h1>{{title}}</h1>
-    <hr/>
+    <h1 class = "title">{{title}}</h1>
+    <hr style="border: 3px solid #666; border-radius: 300px/10px; height: 0px; text-align: center;">
     {% if user.email %}
-        <h2>Bienvenido, {{request.user.first_name}} {{user.last_name}}</h2>
+        <h2 class = "content">Bienvenido, {{request.user.first_name}} {{user.last_name}}</h2>
 
     {% else %}
-        <h2>Inicia sesión en el sistema</h2>
+        <h2 class = "content">Inicia sesión en el sistema</h2>
 
     {% endif %}
 {% endblock %}
