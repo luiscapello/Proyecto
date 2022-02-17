@@ -151,6 +151,8 @@ nav ul li a:hover {
     display: block;
     line-height: 25px;
     margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
 }
 
 .logo-header {

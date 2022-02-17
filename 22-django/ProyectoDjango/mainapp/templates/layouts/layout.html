@@ -30,11 +30,19 @@
             <li>
                 <a href="{% url 'index' %}">Inicio</a>
             </li>
+            {% comment  %}
             {% for page in pages %}
             <li>
                 <a href="{% url 'page' page.2 %}">{{page.1}}</a>
             </li>
             {% endfor %}
+            {% endcomment %}
+            <li>
+                <a href="{% url 'form' %}">Cotización nueva</a>
+            </li>
+            <li>
+                <a href="{% url 'cotizaciones' %}">Cotizaciónes</a>
+            </li>
             <li>
                 <a href="{% url 'logout' %}">Cerrar Sesión</a>
             </li>

@@ -4,7 +4,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return"Aprendiendo"
+    return"<h1>Aprendiendo</h1>"
+    #return<div clase="sombra-lg p-3 mb-5 bg-cuerpo redondeado">Sombra más grande</div>
 
 @app.route('/informacion')
 def informacion():

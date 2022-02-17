@@ -4,6 +4,7 @@ from django.contrib.auth.forms import UserCreationForm
 from mainapp.forms import RegisterForm
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
+#from django.shortcuts import render_to_response
 
 
 
@@ -13,6 +14,18 @@ def index(request):
 
     return render(request, 'mainapp/index.html', {
         'title': 'Inicio'
+    })
+
+def formulario(request):
+
+    return render(request, 'mainapp/form.html', {
+        'title': 'Solicitud de Cotización'
+    })
+
+def cotizaciones(request):
+
+    return render(request, 'mainapp/cotizaciones.html', {
+        'title': 'Solicitud de Cotización'
     })
 
 def register_page(request):
