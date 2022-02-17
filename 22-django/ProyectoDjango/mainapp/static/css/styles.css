@@ -114,6 +114,11 @@ nav ul li a:hover {
 
 /* Estilos contenido */
 
+.form-cot {
+    border: 3px solid #000;
+    margin: 10px 5px 10px 5px;
+}
+
 #content {
     width: 1212px;
     min-height: 530px;
