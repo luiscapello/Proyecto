@@ -114,11 +114,6 @@ nav ul li a:hover {
 
 /* Estilos contenido */
 
-.form-cot {
-    border: 3px solid #000;
-    margin: 10px 5px 10px 5px;
-}
-
 #content {
     width: 1212px;
     min-height: 530px;
@@ -225,6 +220,39 @@ input.boton {
     border-radius: 10px;
     box-shadow: 0px 22px 30px #000;
     background-image: linear-gradient( 149.5deg, rgba(89, 89, 89, 0.95) 50.6%, rgba(0, 0, 0, 1) 71.4%);
+}
+
+
+/*estilos cotizacion*/
+
+.cotizacion {
+    width: 85%;
+    border: 3px solid #000;
+    margin: 10px auto;
+}
+
+.form-cot input,
+.form-cot label {
+    display: block;
+    margin: 10px 5px 10px 5px;
+}
+
+.form-cabecera {
+    border: 3px solid #000;
+    margin: 10px 5px;
+    padding: 10px;
+}
+
+.form-cabecera input {
+    margin: auto;
+    font-size: 17px;
+    width: 100px;
+}
+
+.form-cabecera label {
+    margin: 15px 0px;
+    font-size: 17px;
+    width: 20%;
 }
 
 footer {
