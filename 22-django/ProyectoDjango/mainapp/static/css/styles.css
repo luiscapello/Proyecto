@@ -229,6 +229,7 @@ input.boton {
     width: 85%;
     border: 3px solid #000;
     margin: 10px auto;
+    padding: 10px;
 }
 
 .form-cot input,
@@ -238,9 +239,9 @@ input.boton {
 }
 
 .form-cabecera {
-    border: 3px solid #000;
-    margin: 10px 5px;
-    padding: 10px;
+    display: inline;
+    margin: 0px 5px;
+    text-decoration: dotted;
 }
 
 .form-cabecera input {

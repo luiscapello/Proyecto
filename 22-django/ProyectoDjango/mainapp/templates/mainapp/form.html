@@ -4,38 +4,41 @@
 
 <hr style="border: 3px solid #666; border-radius: 300px/10px; height: 0px; text-align: center;"> {% if user.email %}
 <h1 class="content">Realiza una Nueva Cotización {{request.user.first_name}} {{user.last_name}}</h1>
-<h2 class="content">Solicitud de cotización flexografía</h2>
+
 
 <hr style="border: 3px solid #666; border-radius: 300px/10px; height: 0px; text-align: center;">
+<h2 class="content">Solicitud de cotización flexografía</h2>
+
 
 <div class="cotizacion">
     <div class="form-cabecera">
         <label for="fecha">Fecha</label>
         <input type="text" name="fecha" placeholder="fecha">
-        <label for="Tipo">Tipo</label>
-        <input type="text" name="cliente">
-        <label for="folio">Folio</label>
-        <input type="text" name="folio" placeholder="folio">
-
-        <label for="numero_cliente"># Cliente</label>
-        <input type="text" name="cliente" placeholder="No Cliente">
-        <label for="nombre_cliente"> Cliente</label>
-        <input type="text" name="cliente" placeholder="Cliente">
-        <label for="prensa">Prensa</label>
-        <input type="text" name="prensa">
-        <label for="solicita">Solicita</label>
-        <label for="nombre">{{request.user.first_name}} {{user.last_name}}</label>
+        <select class="form-select" aria-label="Default select example">
+            <option selected>Tipo</option>
+            <option value="1 ">Nueva</option>
+          </select>
+        <label for="folio ">Folio</label>
+        <input type="text " name="folio " placeholder="folio ">
+        <label for="numero_cliente ">#Cliente</label>
+        <input type="text " name="cliente " placeholder="No Cliente ">
+        <label for="nombre_cliente "> Cliente</label>
+        <input type="text " name="cliente " placeholder="Cliente ">
+        <label for="prensa ">Prensa</label>
+        <input type="text " name="prensa ">
+        <label for="solicita ">Solicita</label>
+        <label for="nombre ">{{request.user.first_name}} {{user.last_name}}</label>
     </div>
-    <div class="form-cot">
-        <label for="">No. cotización</label>
-        <input type="text" name="title" placeholder="numero de cotización">
-        <label for="codigo">Codigo Uyeda</label>
-        <input type="text" name="codigo" placeholder="Codigo">
+    <div class="form-cot ">
+        <label for=" ">No. cotización</label>
+        <input type="text " name="title " placeholder="numero de cotización ">
+        <label for="codigo ">Codigo Uyeda</label>
+        <input type="text " name="codigo " placeholder="Codigo ">
 
     </div>
 
 </div>
 
 {% else %}
-<h2 class="content">Inicia sesión en el sistema</h2>
+<h2 class="content ">Inicia sesión en el sistema</h2>
 {% endif %} {% endblock %}
