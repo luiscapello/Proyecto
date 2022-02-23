@@ -232,14 +232,15 @@ input.boton {
     padding: 10px;
 }
 
-.form-cot input,
+
+/*.form-cot input,
 .form-cot label {
-    display: block;
     margin: 10px 5px 10px 5px;
-}
+}*/
+
+.form-cot {}
 
 .form-cabecera {
-    display: inline;
     margin: 0px 5px;
     text-decoration: dotted;
 }
