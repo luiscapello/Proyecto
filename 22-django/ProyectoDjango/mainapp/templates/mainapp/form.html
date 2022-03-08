@@ -16,11 +16,22 @@
 
         <form action="">
             <div class="form-cot">
-                <label for="username">Introduce tu numero de Empleado</label>
-                <input type="text" name="username" />
+                <div class="cot-head">
+                    <label for="fecha">Fecha</label>
+                <input type="fecha" name="fecha" />
         
-                <label for="password">Contraseña</label>
-                <input type="password" name="password" />
+                <label for="tipo">Tipo</label>
+                <input type="text" name="inputname" value="Nueva" readonly>
+                <label for="fecha">Folio</label>
+                <input type="folio" name="folio" />
+                <label for="cliente"># Cliente</label>
+                <input type="cliente" name="cliente" />
+                <label for="nom-clie">Cliente</label>
+                <input type="nom-clie" name="nom-clie" />
+                <label for="solicita">Solicita</label>
+                <input type="text" name="inputname" value="{{request.user.first_name}} {{user.last_name}}" readonly>
+                </div>
+                
             </div>
         </form>
             
