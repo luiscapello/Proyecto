@@ -168,12 +168,11 @@ nav ul li a:hover {
 }
 
 .form-cot {
-    display: block;
+    display: grid;
     width: 50%;
     height: 600px;
     padding-top: 10px;
     border-radius: 4em 1em;
-    margin: 30px auto;
 }
 
 .box2 form {
