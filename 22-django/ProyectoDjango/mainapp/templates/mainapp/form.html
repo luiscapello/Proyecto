@@ -14,7 +14,15 @@
         <hr style="border: 3px solid #666; border-radius: 300px/10px; height: 0px; text-align: center;">
         <h2 class="content">{{request.user.first_name}} {{user.last_name}}</h2>
 
-        <form action=""></form>
+        <form action="">
+            <div class="form-cot">
+                <label for="username">Introduce tu numero de Empleado</label>
+                <input type="text" name="username" />
+        
+                <label for="password">Contraseña</label>
+                <input type="password" name="password" />
+            </div>
+        </form>
             
     {% else %}
         <h2 class = "content">Inicia sesión en el sistema</h2>
