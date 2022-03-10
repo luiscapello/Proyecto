@@ -116,7 +116,7 @@ nav ul li a:hover {
 
 #content {
     width: 1212px;
-    min-height: 530px;
+    height: 223em;
     margin: 0 auto;
     margin-bottom: 30px;
     margin-top: 30px;
@@ -125,7 +125,7 @@ nav ul li a:hover {
 .box {
     background: #B8DCEB;
     width: 95%;
-    min-height: 930px;
+    height: 220em;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 10px;
